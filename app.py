@@ -27,8 +27,6 @@ CORS(app)
 # for program in data_ms:
 #     programs.append(program)
 
-# print(programs)
-
 # db = SQLAlchemy(app)
 
 
