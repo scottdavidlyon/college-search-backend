@@ -5,7 +5,7 @@ pandas
 
 then run the command 'python app.py'
 
-This backend is setup with the flask package
+This backend is setup with the flask package and uses a postgres database
 
 There are 4 api requests including:
 GET /ma-schools -> This gets the entire list of colleges
