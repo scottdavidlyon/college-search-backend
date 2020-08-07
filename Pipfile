@@ -7,6 +7,12 @@ verify_ssl = true
 
 [packages]
 gunicorn = "*"
+flask = "*"
+flask-cors = "*"
+flask-sqlalchemy = "*"
+flask-migrate = "*"
+sqlalchemy = "*"
+pandas = "*"
 
 [requires]
 python_version = "3.8"
