@@ -1,3 +1,10 @@
+To run this application pip install the following packages:
+flask
+flask_cors
+pandas
+
+then run the command 'python app.py'
+
 This backend is setup with the flask package
 
 There are 4 api requests including:
