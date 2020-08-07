@@ -1,6 +1,6 @@
 import psycopg2
 from flask import Flask, request
-from flask_cors import CORS
+from flask_cors import CORS, cross_origin
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from sqlalchemy import create_engine
@@ -70,6 +70,7 @@ data_p = json.dumps(data_p)
 
 
 @app.route("/ma-schools")
+@cross_origin()
 def ma_schools():
     return json.dumps(schools.headers.add('Access-Control-Allow-Origin', '*'))
 
