@@ -162,7 +162,6 @@ pyobjc-framework-CalendarStore==6.2.2
 pyobjc-framework-CloudKit==6.2.2
 pyobjc-framework-Collaboration==6.2.2
 pyobjc-framework-ColorSync==6.2.2
-pyobjc-framework-CoreAudio==6.2.2
 pyobjc-framework-CoreAudioKit==6.2.2
 pyobjc-framework-CoreBluetooth==6.2.2
 pyobjc-framework-CoreData==6.2.2
