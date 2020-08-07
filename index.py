@@ -71,7 +71,7 @@ data_p = json.dumps(data_p)
 
 @app.route("/ma-schools")
 def ma_schools():
-    return json.dumps(schools)
+    return json.dumps(schools.headers.add('Access-Control-Allow-Origin', '*'))
 
 
 @app.route("/ma-schools/<name>", methods=['GET'])
