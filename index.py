@@ -1,4 +1,4 @@
-import psycopg2
+
 from flask import Flask, request
 from flask_cors import CORS, cross_origin
 from flask_sqlalchemy import SQLAlchemy
@@ -18,10 +18,10 @@ with open('programs.json') as f:
 
 app = Flask(__name__)
 CORS(app)
-app.config['CORS_HEADERS'] = 'Content-Type'
+# app.config['CORS_HEADERS'] = 'Content-Type'
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://telbfierjjqges:5fbcf8bb02daf595e0d47d9b366265cf64af7543ddbcd061f365bb138bb179dc@ec2-52-1-95-247.compute-1.amazonaws.com:5432/datbtt39dmvo1o'
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://telbfierjjqges:5fbcf8bb02daf595e0d47d9b366265cf64af7543ddbcd061f365bb138bb179dc@ec2-52-1-95-247.compute-1.amazonaws.com:5432/datbtt39dmvo1o'
+# app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 
 # programs = []
 # for program in data_ms:
@@ -69,10 +69,9 @@ data_ms = json.dumps(data_ms)
 data_p = json.dumps(data_p)
 
 
-@app.route("/ma-schools")
-@cross_origin()
+@app.route("/ma-schools", methods=['GET'])
 def ma_schools():
-    return json.dumps(schools.headers.add('Access-Control-Allow-Origin', '*'))
+    return json.dumps(schools)
 
 
 @app.route("/ma-schools/<name>", methods=['GET'])
