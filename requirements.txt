@@ -154,7 +154,6 @@ pyobjc-framework-AdSupport==6.2.2
 pyobjc-framework-AppleScriptKit==6.2.2
 pyobjc-framework-AppleScriptObjC==6.2.2
 pyobjc-framework-ApplicationServices==6.2.2
-pyobjc-framework-AuthenticationServices==6.2.2
 pyobjc-framework-AutomaticAssessmentConfiguration==6.2.2
 pyobjc-framework-Automator==6.2.2
 pyobjc-framework-AVFoundation==6.2.2
